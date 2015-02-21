@@ -37,25 +37,30 @@
 
 						<p class="knobContainer label"><span class="orangeDark">Low</span>
 						<input id="low-1" data-step="1" data-min="-15" data-max="15" data-width="60" data-cursor=true data-thickness=.5 data-angleOffset=-125 data-angleArc=250 data-fgColor="#E38356" data-bgColor="#777" value="0"></p>
+
 					</div>
-					<div class="stripSection last">		
+					<div class="stripSection">
 						<p class="knobContainer label"><span class="blue">Pan</span>
 						<input id="pan-1" data-step="1" data-min="-45" data-max="45" data-width="60" data-cursor=true data-thickness=.5 data-angleOffset=-125 data-angleArc=250 data-fgColor="#56A1E3" data-bgColor="#777" value="0" onchange="pan(this);"></p>
-
+					</div>
+					<div class="stripSection">
 						<p class="label"><span class="checkbox-label">Comp</span><input type="checkbox" id="compost-1" /><label for="compost-1"><span></span></label></p>
-
+					</div>
+					<div class="stripSection">
 						<p class="label"><span class="checkbox-label">Mute</span><input type="checkbox" id="mute-1" /><label for="mute-1"><span></span></label></p>
-
-						<p class="vertSliderContainer label"><span>Vol</span>
-						<input id="volume-1" class="vSlider" type="range" min="0" max="1" step="0.01" value="0.5"/></p>
+					</div>
+					<div class="stripSection last">
+						<p class="label"><span>Vol</span>
+						<input id="volume-1" class="Slider" type="range" min="0" max="1" step="0.01" value="0.5"/></p>
 					</div>
 				</div>			
 			</div>
 			<div id="credits">
 				<p class="info"><strong>Channel Strip</strong> is a stand alone audio channel strip that allows an audio signal to be boosted, attenuated, equalized, panned, compressed and muted in the browser. The audio source is derived from user media via file select input. Simply choose an audio file (mp3 or wav, etc.) from your hard drive and click Play to get the party started.</p>
-
+				<p>If one channel isn't enough for you, check out my <a href="http://middleearmedia.com/webaudioloopmixer/">Web Audio Loop Mixer</a>.</p>
+								
 				<p><a href="http://middleearmedia.com/apps/channel-strip/" title="Learn more about Channel Strip">Channel Strip</a> is a Web Audio experiment by <a href="http://middleearmedia.com/" title="Middle Ear Media">Middle Ear Media</a>.</p>
-				<p class="small-text"><span class="red">* </span>Keep in mind you need Chrome, Safari or Firefox for this to work!</p>
+				<p class="small-text"><span class="red">* </span>Keep in mind you need a modern browser for this to work!</p>
 			</div>
 		</div>
 		<script src="assets/js/channel-file.js"></script>

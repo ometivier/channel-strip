@@ -3,7 +3,7 @@
  * Description: Web Audio API Channel Strip. Audio Source via User Media.
  * Author: Obadiah Metivier
  * Author URI: http://middleearmedia.com/ 
- * Version: 1.1
+ * Version: 1.5
 */
 
 /* Typography */
@@ -78,7 +78,7 @@ body {
 }
 #page-wrap {
 	margin: 50px auto;
-	width: 600px;
+	width: 860px;
 }
 .info {
 	text-align: left;
@@ -105,27 +105,27 @@ body {
 	color: #ddd;
 }
 .stripSolo {
-	background-color: #333;
-	background-image: url('assets/images/bg-strip.jpg');
+	background-color: #111;
+	background-image: url("assets/images/gray.png");
 	border: 1px solid #222;
     border-radius: .5em;
 	box-shadow: 0 0 6px #666;
     color: #cc9;
 	margin: 0 auto;
 	padding: 0;
-	width: 80px;
+	height: 90px;
 }
 .stripSection {
-	border-bottom: 2px solid #333;
-	display: inline-block;
+	border-right: 2px solid #333;
+	float: left;
 	padding: .5em 0 0;
 }
 .last {
-	border-bottom: none;
+	border-right: none;
 }
 .strip {
 	background-color: #333;
-	background-image: url('assets/images/bg-strip.jpg');
+	background-image: url("assets/images/bg-strip.jpg");
 	border: 1px solid #222;
     border-radius: .5em;
 	box-shadow: 0 0 6px #666;
@@ -135,26 +135,17 @@ body {
 	float: left;
 }
 .stripHorizontal {
-	background-position: 300px 750px;
 	border: 1px solid #222;
     border-radius: .5em;
     color: #cc9;
 	margin: 0 auto .5em;
 	padding: .5em;
-	width: 418px;
+	width: 430px;
 }
 
 /* Control Inputs */
 input[type="range"] {
-    -webkit-appearance: slider-vertical;
-	background-color: #6ACC28;
-    border: 9px solid #0f0f0f;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 0 1px 5px #444;
-    height: 100px;
-    margin: 0 22px;
-    padding: 0;
-    width: 30px;
+
 }
 input[type='range']::-webkit-slider-thumb {
 	-webkit-appearance: none;
@@ -165,16 +156,13 @@ input[type='range']::-webkit-slider-thumb {
 	border: 2px solid #6ACC28;
 	vertical-align: middle;
 }
-.vertSliderContainer {
-	background-image: url('assets/images/bg-vert-slider.png');
-	height: 130px;
+.SliderContainer {
 	text-align: center;
-	width: 79px;
 	margin-top: .5em;
 	margin-bottom: 0em;
 }
 .label {
-	display: block;
+	float: left;	
 	margin-bottom: .25em;
 	margin-top: 0;	
 }
@@ -184,32 +172,24 @@ input[type='range']::-webkit-slider-thumb {
     text-align: center;
     text-transform: uppercase;
     vertical-align: top;
-	width: 76px;
 }
 .label span.checkbox-label {
-    display: block;
-	margin-bottom: .125em;
-	margin-top: -.5em;
-    text-align: center;
-    text-transform: uppercase;
-    vertical-align: top;
-	width: 76px;
+	width: 78px;
 }
 input[type="checkbox"] {
 	display:none;
 	margin: .25em;
 }
 input[type="checkbox"] + label span {
-	background: url('assets/images/check_radio_sheet.png') left top no-repeat;
+	background: url('assets/images/check_radio_sheet.png') -39px top no-repeat;
 	cursor: pointer;
-	display: inline-block;
 	height: 19px;
-	margin: 0 31px .5em;
+	margin: 16px auto 22px;
 	vertical-align: middle;
 	width: 19px;
 }
 input[type="checkbox"]:checked + label span {
-	background: url('assets/images/check_radio_sheet.png') -19px top no-repeat;
+	background: url('assets/images/check_radio_sheet.png') -58px top no-repeat;
 }
 
 /* Source and Trasport Section */
@@ -238,7 +218,6 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 	width: 79px;
 	float: left;
 	margin-top: -.25em;
-	margin-bottom: -.125em;
 }
 
 /* Miscellaneous */
